@@ -1,0 +1,39 @@
+nsswitch::passwd:
+  - files
+  - sss
+  - systemd
+nsswitch::group:
+  - files
+  - sss
+  - systemd
+nsswitch::netgroup:
+  - sss
+  - files
+nsswitch::automount:
+  - sss
+  - files
+nsswitch::services:
+  - sss
+  - files
+nsswitch::shadow:
+  - files
+  - sss
+nsswitch::hosts:
+  - files
+  - dns
+  - myhostname
+nsswitch::aliases:
+  - files
+nsswitch::ethers:
+  - files
+nsswitch::gshadow:
+  - files
+nsswitch::networks:
+  - files
+  - dns
+nsswitch::protocols:
+  - files
+nsswitch::publickey:
+  - files
+nsswitch::rpc:
+  - files
